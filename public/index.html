@@ -5,71 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Página de Formularios</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilos temporales para visualización */
+    .brand-logo { height: 60px; margin: 0 20px; }
+    .form-card img { width: 120px; height: 120px; object-fit: contain; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .form-card { text-align: center; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+  </style>
 </head>
 <body>
-  <!-- Cabecera con logos de Findus y Nomad Foods -->
-  <header class="brand-header">
-    <!-- Alternativa para Findus -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Findus_logo.png/320px-Findus_logo.png" alt="Findus Logo" class="brand-logo">
-    <!-- Alternativa para Nomad Foods -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Nomad_Foods_logo.svg/320px-Nomad_Foods_logo.svg.png" alt="Nomad Foods Logo" class="brand-logo">
+  <header class="brand-header" style="text-align: center; padding: 20px; background: #f5f5f5;">
+    <img src="https://cdn-icons-png.flaticon.com/512/681/681662.png" alt="Logo 1" class="brand-logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/681/681686.png" alt="Logo 2" class="brand-logo">
   </header>
   
-  <div class="container">
-    <h1>Pulsa el botón correspondiente para comenzar</h1>
+  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+    <h1 style="text-align: center; margin-bottom: 40px;">Pulsa el botón correspondiente para comenzar</h1>
     <div class="grid">
-      <!-- Tarjeta 1: Revisión LVO (imagen de checklist) -->
+      <!-- Tarjeta 1: Revisión LVO -->
       <div class="form-card">
-        <a href="/form1" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Checklist_icon.svg/256px-Checklist_icon.svg.png" alt="Revisión LVO">
+        <a href="/form1">
+          <img src="https://static.thenounproject.com/png/2185957-200.png" alt="Checklist">
         </a>
         <p>Revisión LVO</p>
-        <a href="/form1" target="_blank" class="btn">Ir al formulario</a>
+        <a href="/form1" class="btn" style="display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Ir al formulario</a>
       </div>
-      
-      <!-- Tarjeta 2: Revisión Botiquines (imagen de botiquín de primeros auxilios) -->
+
+      <!-- Tarjeta 2: Revisión Botiquines -->
       <div class="form-card">
-        <a href="/form2" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/First_aid_kit_icon.svg/256px-First_aid_kit_icon.svg.png" alt="Revisión Botiquines">
+        <a href="/form2">
+          <img src="https://static.thenounproject.com/png/3484757-200.png" alt="Botiquín">
         </a>
         <p>Revisión Botiquines</p>
-        <a href="/form2" target="_blank" class="btn">Ir al formulario</a>
+        <a href="/form2" class="btn" style="display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Ir al formulario</a>
       </div>
-      
-      <!-- Tarjeta 3: Revisión Arneses (imagen de arnés de seguridad) -->
+
+      <!-- Tarjeta 3: Revisión Arneses -->
       <div class="form-card">
-        <a href="/form3" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Safety_harness_icon.svg/256px-Safety_harness_icon.svg.png" alt="Revisión Arneses">
+        <a href="/form3">
+          <img src="https://static.thenounproject.com/png/3043085-200.png" alt="Arnés">
         </a>
         <p>Revisión Arneses</p>
-        <a href="/form3" target="_blank" class="btn">Ir al formulario</a>
+        <a href="/form3" class="btn" style="display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Ir al formulario</a>
       </div>
-      
-      <!-- Tarjeta 4: Revisión Escaleras (imagen de escalera) -->
+
+      <!-- Tarjeta 4: Revisión Escaleras -->
       <div class="form-card">
-        <a href="/form4" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Ladder_icon.svg/256px-Ladder_icon.svg.png" alt="Revisión Escaleras">
+        <a href="/form4">
+          <img src="https://static.thenounproject.com/png/3043068-200.png" alt="Escalera">
         </a>
         <p>Revisión Escaleras</p>
-        <a href="/form4" target="_blank" class="btn">Ir al formulario</a>
+        <a href="/form4" class="btn" style="display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Ir al formulario</a>
       </div>
-      
-      <!-- Tarjeta 5: Revisión Andamios (imagen de andamios) -->
+
+      <!-- Tarjeta 5: Revisión Andamios -->
       <div class="form-card">
-        <a href="/form5" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scaffolding_icon.svg/256px-Scaffolding_icon.svg.png" alt="Revisión Andamios">
+        <a href="/form5">
+          <img src="https://static.thenounproject.com/png/2812278-200.png" alt="Andamio">
         </a>
         <p>Revisión Andamios</p>
-        <a href="/form5" target="_blank" class="btn">Ir al formulario</a>
+        <a href="/form5" class="btn" style="display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Ir al formulario</a>
       </div>
-      
-      <!-- Tarjeta 6: Revisión Vehículos (imagen de vehículo) -->
+
+      <!-- Tarjeta 6: Revisión Vehículos -->
       <div class="form-card">
-        <a href="/form6" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Car_icon.svg/256px-Car_icon.svg.png" alt="Revisión Vehículos">
+        <a href="/form6">
+          <img src="https://static.thenounproject.com/png/712729-200.png" alt="Vehículo">
         </a>
         <p>Revisión Vehículos</p>
-        <a href="/form6" target="_blank" class="btn">Ir al formulario</a>
+        <a href="/form6" class="btn" style="display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Ir al formulario</a>
       </div>
     </div>
   </div>
