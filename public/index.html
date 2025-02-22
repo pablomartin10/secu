@@ -1,21 +1,58 @@
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página de Formularios</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Bienvenido a nuestra página de formularios</h1>
-  <p>Seleccione uno de los siguientes formularios para completar:</p>
-
-  <!-- Botones que llevan a cada formulario -->
-  <button onclick="window.location.href='/form1'">Formulario 1</button>
-  <button onclick="window.location.href='/form2'">Formulario 2</button>
-  <button onclick="window.location.href='/form3'">Formulario 3</button>
-  <button onclick="window.location.href='/form4'">Formulario 4</button>
-  <button onclick="window.location.href='/form5'">Formulario 5</button>
-  <button onclick="window.location.href='/form6'">Formulario 6</button>
+  <div class="container">
+    <h1>Pulsa el botón correspondiente para comenzar</h1>
+    <div class="grid">
+      <!-- Tarjeta 1 -->
+      <div class="form-card">
+        <!-- Reemplaza "icono1.png" por la imagen o ícono que prefieras -->
+        <img src="icono1.png" alt="Icono Formulario 1" />
+        <p>Revisión LVO</p>
+        <a href="/form1" target="_blank" class="btn">Ir al formulario</a>
+      </div>
+      
+      <!-- Tarjeta 2 -->
+      <div class="form-card">
+        <img src="icono2.png" alt="Icono Formulario 2" />
+        <p>Revisión Botiquines</p>
+        <a href="/form2" target="_blank" class="btn">Ir al formulario</a>
+      </div>
+      
+      <!-- Tarjeta 3 -->
+      <div class="form-card">
+        <img src="icono3.png" alt="Icono Formulario 3" />
+        <p>Revisión Arneses</p>
+        <a href="/form3" target="_blank" class="btn">Ir al formulario</a>
+      </div>
+      
+      <!-- Tarjeta 4 -->
+      <div class="form-card">
+        <img src="icono4.png" alt="Icono Formulario 4" />
+        <p>Revisión Escaleras</p>
+        <a href="/form4" target="_blank" class="btn">Ir al formulario</a>
+      </div>
+      
+      <!-- Tarjeta 5 -->
+      <div class="form-card">
+        <img src="icono5.png" alt="Icono Formulario 5" />
+        <p>Revisión Andamios</p>
+        <a href="/form5" target="_blank" class="btn">Ir al formulario</a>
+      </div>
+      
+      <!-- Tarjeta 6 -->
+      <div class="form-card">
+        <img src="icono6.png" alt="Icono Formulario 6" />
+        <p>Revisión Vehículos</p>
+        <a href="/form6" target="_blank" class="btn">Ir al formulario</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
