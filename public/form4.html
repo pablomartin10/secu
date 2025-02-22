@@ -1,17 +1,43 @@
-<!-- public/form4.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario 4</title>
+  <title>Formulario 4: Revisión Escaleras</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Formulario 4: Subir un archivo</h1>
-  <form action="/uploadForm4" method="post" enctype="multipart/form-data">
-    <label for="file">Selecciona un archivo para subir:</label>
-    <input type="file" name="file" id="file" required>
-    <button type="submit">Subir</button>
-  </form>
+  <div class="form-container">
+    <h1>Revisión Escaleras</h1>
+    <p>Complete la información solicitada para la revisión de escaleras.</p>
+    <form action="/uploadForm4" method="post" enctype="multipart/form-data">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" name="email" id="email" placeholder="tu@correo.com" required>
+
+      <label for="fecha">Fecha de Revisión:</label>
+      <input type="date" name="fecha" id="fecha" required>
+
+      <label for="ubicacion">Ubicación:</label>
+      <input type="text" name="ubicacion" id="ubicacion" placeholder="Lugar de la revisión" required>
+
+      <label for="tipo_escalera">Tipo de Escalera:</label>
+      <select name="tipo_escalera" id="tipo_escalera" required>
+         <option value="">Seleccione</option>
+         <option value="fija">Fija</option>
+         <option value="portatil">Portátil</option>
+         <option value="otro">Otro</option>
+      </select>
+
+      <label for="file">Adjunta el archivo:</label>
+      <input type="file" name="file" id="file" required>
+
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea name="comentarios" id="comentarios" rows="4" placeholder="Ingresa comentarios adicionales..."></textarea>
+
+      <button type="submit" class="btn">Enviar Revisión</button>
+    </form>
+  </div>
 </body>
 </html>
