@@ -1,84 +1,117 @@
-/* styles.css */
-
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  /* Contenedor principal */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  line-height: 1.6;
+  color: #333;
+  padding: 10px;
+}
+
+/* Contenedor general para cada formulario */
+.form-container {
+  background: #fff;
+  max-width: 600px;
+  width: 95%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Estructura del formulario */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="date"],
+.form-container input[type="number"],
+.form-container input[type="file"],
+.form-container select,
+.form-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Grupo de radios */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.radio-group label {
+  font-weight: normal;
+}
+
+/* Botón */
+.form-container button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 480px) {
+  .form-container {
     padding: 20px;
-    text-align: center;
   }
-  
-  /* Título principal */
-  .container h1 {
-    margin-bottom: 40px;
-    color: #333;
+  .form-container h1 {
+    font-size: 20px;
   }
-  
-  /* Grid principal */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* 
-      - `auto-fill` y `minmax` harán que se ajuste automáticamente
-      - Cambia a `repeat(3, 1fr)` si quieres siempre 3 columnas
-    */
-    gap: 20px;
+  .form-container p,
+  .form-container label,
+  .form-container input,
+  .form-container select,
+  .form-container textarea,
+  .form-container button {
+    font-size: 14px;
   }
-  
-  /* Tarjeta individual */
-  .form-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease;
-    display: flex;
+  .radio-group {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
   }
-  
-  .form-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Imagen de la tarjeta */
-  .form-card img {
-    max-width: 80px;
-    margin-bottom: 15px;
-  }
-  
-  /* Texto de la tarjeta */
-  .form-card p {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  /* Botón */
-  .btn {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  }
-  
+}
